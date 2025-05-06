@@ -5,7 +5,7 @@ import '../constantes/index.js'
 
 const getAssetPath = (path) => {
     return import.meta.env.PROD 
-      ? `/CVweb${path}`
+      ? `/CV${path}`
       : `src${path}`;
 };
 

@@ -58,7 +58,7 @@ function Inicio() {
 
         <div className=" w-full h-screen items-center flex justify-center text-Aoscuro">
           <div className="FondoAnim">
-          <span>&lt;Felipe Pardo/&gt;</span>
+          <span>&lt;Felipe-Pardo/&gt;</span>
           </div>
         </div>
 

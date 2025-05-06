@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://paintastico.github.io/CVweb/",
+  "homepage": "https://paintastico.github.io/CV/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

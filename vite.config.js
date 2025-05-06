@@ -8,7 +8,7 @@ export default defineConfig({
     host: true, // Permite acceso desde la red local
   },
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
     assetsDir: 'assets', // Directorio para assets estáticos
     emptyOutDir: true,   // Limpia el directorio en cada build
   }
