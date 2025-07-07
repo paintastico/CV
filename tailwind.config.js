@@ -15,26 +15,24 @@ export default {
 
       fontFamily: {
         generalsans: ['General Sans', 'sans-serif'],
+        geistmono: ['Geist Mono', 'monospace'],
       },
       colors: {
 
-        
+        BlueBackground: {
 
+          DEFAULT: '#0D172A',
+        },      
         Destacado:{
           DEFAULT: '#7DD3FC',
 
         },
-
-
-
         Aoscuro:{
           DEFAULT: '#15303A',
         },
-
         Red:{
           DEFAULT: '#FF0000',
         },
-
         Verde:{
           DEFAULT: '#008f39',
         },

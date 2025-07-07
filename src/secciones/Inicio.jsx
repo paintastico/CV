@@ -52,30 +52,37 @@ function Inicio() {
   return (
     <section 
       id="inicio" 
-      className="relative w-full h-screen overflow-hidden bg-gradient-to-br from-black to-Aoscuro"
+      className="relative w-full h-screen overflow-hidden bg-gradient-to-br from-black to-BlueBackground"
     >
       <div className=" animate-fadeIn">
 
-        <div className=" w-full h-screen items-center flex justify-center text-Aoscuro">
+        <div className=" w-full h-screen items-center flex justify-center text-Aoscuro opacity-50">
           <div className="FondoAnim">
-          <span>&lt;Felipe-Pardo/&gt;</span>
+          <span
+          style={{ fontFamily: 'Geist Mono' }}
+          >&lt;Felipe-Pardo/&gt;</span>
           </div>
         </div>
 
         <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center text-white pointer-events-none">
           <h1 className="text-6xl md:text-7xl font-bold mb-4  "
           style={{
-            textShadow: "2px 4px 12px rgba(0,0,0,0.7)"
+            textShadow: "2px 4px 12px rgba(0,0,0,0.7)",
+            fontFamily: 'Geist Mono'
           }}>Felipe Pardo</h1>
           <h2 className="text-2xl md:text-3xl opacity-80 text-white"
           style={{
-            textShadow: "2px 4px 12px rgba(0,0,0,0.7)"
+            textShadow: "2px 4px 12px rgba(0,0,0,0.7)",
+            fontFamily: 'Geist Mono'
           }}>Frontend Developer | Santiago, CL</h2>
           
           {/* Botón opcional */}
           <div className='md:flex-row pointer-events-auto'>
             <button className="pointer-events-auto mt-8 px-8 py-3 bg-white text-black font-bold rounded-full 
-            hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200 " href="#sobre-mi">
+            hover:bg-opacity-90 hover:[transform:scale(1.2)] transition-transform duration-200 
+            " href="#sobre-mi"
+            style={{ fontFamily: 'Geist Mono' }}
+            >
             Mi CV
             </button>
           </div><br/>
@@ -103,18 +110,18 @@ function Inicio() {
           
           
           {/* Iluminación mejorada */}
-          <ambientLight intensity={0.5}  radius={10}/>
+          <ambientLight intensity={0.8}  radius={10}/>
 
           <spotLight position={[0, 2, -10]} intensity={8}/>
           
           
-          <directionalLight position={[0, 0, 5]} intensity={0.5}/>
+          <directionalLight position={[0, 0, 5]} intensity={0.7}/>
 
           <directionalLight position={[0, -8, 0]} intensity={1} castShadow/>
 
 
           <Suspense fallback={null}>
-            <Physics gravity={[0, 0, 0]}>
+            <Physics gravity={[0, 0, 0]} >
               <Pointer />
               <group scale={[0.5, 0.5, 0.5]}>
               

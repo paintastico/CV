@@ -5,6 +5,7 @@ import SobreMi from './secciones/SobreMi'
 import Tecnologias from './secciones/Tecnologias'
 import Formacion from './secciones/Formacion'
 import Contacto from './secciones/Contacto'
+import Portafolio from './secciones/Portafolio'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <SobreMi/>
         <Tecnologias/>
         <Formacion/>
+        <Portafolio/>
         <Contacto/>
         
         

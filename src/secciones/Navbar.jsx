@@ -2,8 +2,8 @@ import React from 'react'
 import  { useState } from "react";
 import {navLinks} from "../constantes/index.js";
 
-
-
+import imagenMenu from '../assets/menu.svg';
+import imagenClose from '../assets/close.svg';
 
 const NavItems = () => {
     return (
@@ -33,7 +33,7 @@ const Navbar = () => {
                         Felipe Pardo 🦆
                     </a>
                     <button onClick={toggleMenu} className="sm:hidden">
-                        <img src={isOpen ? "assets/close.svg" : "assets/menu.svg"} alt="toggle" className="w-6 h-6"/>
+                        <img src={isOpen ? imagenClose : imagenMenu} alt="toggle" className="w-6 h-6"/>
 
                     </button>
 

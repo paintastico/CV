@@ -10,19 +10,13 @@ const Escena = (props) => {
 
 
 
-  const modelPath = `${import.meta.env.BASE_URL}models/simpleDuck.glb`;
+  const modelPath = `${import.meta.env.BASE_URL}models/simpleDuck2.glb`;
 
 
   // ▶ 2. Carga el modelo con la ruta condicional
   const { nodes, materials } = useGLTF(modelPath);
   return (
     <group {...props} dispose={null} position={[0, -1, 0]} scale={[0.5, 0.5, 0.5]}>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube003.geometry}
-        material={materials['Material.002']}
-      />
       <mesh
         castShadow
         receiveShadow
@@ -41,10 +35,14 @@ const Escena = (props) => {
         geometry={nodes.Cube005_2.geometry}
         material={materials['Material.002']}
       />
+      <mesh castShadow receiveShadow geometry={nodes.Cube005_3.geometry} material={materials.BLU} />
     </group>
   )
 }
 
-useGLTF.preload(`${import.meta.env.BASE_URL}models/simpleDuck.glb`);
+useGLTF.preload(`${import.meta.env.BASE_URL}models/simpleDuck2.glb`);
 
 export default Escena;
+
+
+
